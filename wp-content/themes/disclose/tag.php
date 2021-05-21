@@ -8,6 +8,7 @@ get_header();
 include_once get_template_directory() . '/inc/stramien.php';
 ?>
 <div class="tags-page overflow-hidden mb-5 pb-5">
+<h2 class="text-center mt-5">Tag archief voor: <?php single_tag_title(); ?></h2>
 	<div class="row mb-5">
 		<?php if ( have_posts() ) :
 

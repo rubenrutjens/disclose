@@ -425,6 +425,10 @@ main {
 .blogs {
     margin-top: 200px;
 }
+.blogs-tags {
+    margin-top: 5%;
+    margin-left: 15%;
+}
 
 .card-title {
     font-size: 22px;

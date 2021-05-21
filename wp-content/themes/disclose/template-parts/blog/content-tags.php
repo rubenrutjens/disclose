@@ -1,7 +1,5 @@
 
-    <div class="container"> 
-
-<section class="blogs col-md-6">
+<section class="blogs-tags col-md-4">
     <div class="card">
         <div class="card-horizontal">
         <div class="img-square-wrapper">
@@ -19,4 +17,3 @@
         </div>
     </div>
 </section>
-</div>
