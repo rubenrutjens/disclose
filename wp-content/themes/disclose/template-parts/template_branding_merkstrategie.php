@@ -3,11 +3,35 @@
     include_once get_template_directory() . '/inc/stramien.php'; 
     ?>
     
-            <section class="blog-section">
-                <div class="blog-content">
-                    <?php 
-                        the_content();
-                    ?>
+            <section class="blog-section" style="margin-left:15%;">
+                <div class="blog-content pt-4">
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
+                    lorem <br>
     
                 </div>
             </section>
