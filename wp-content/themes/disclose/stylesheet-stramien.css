@@ -46,3 +46,11 @@
     padding-bottom: 20%;
     right: 100px;
 }
+
+.backButton i.fas {
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px #B9A488;
+    padding: 1em 1.2em;
+  
+  }

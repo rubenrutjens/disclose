@@ -1,31 +1,12 @@
 <?php
 
 get_header(); 
-include get_template_directory() . '/sidebar.php';
+include_once get_template_directory() . '/inc/stramien.php'; 
 
 ?>
 
     <!-- Scroll effect, this text must match the one given above apart from colors -->
-    <div class="logo">
-        <div class="logoPart logoIcon"><a href="<?php echo get_option("siteurl"); ?>"><?php echo file_get_contents(get_template_directory() . "/img/logoIcon.svg"); ?></a></div>
-        <div class="logoPart logoText black"><a href="<?php echo get_option("siteurl"); ?>"><?php echo file_get_contents(get_template_directory() . "/img/logoText.svg"); ?></a></div>
-    </div>
-    <h2 class="menuHeading">Menu</h2>
-    <?php echoMenu(true); ?>
-    <div class="stramienBackground overlay">
-        <div class="innerTextRelativeContainer">
-            <div class="innerTextAbsoluteContainer">    
-                <div class="logo">
-                    <div class="logoPart logoIcon"><a href="<?php echo get_option("siteurl"); ?>"><?php echo file_get_contents(get_template_directory() . "/img/logoIcon.svg"); ?></a></div>
-                    <div class="logoPart logoText"><a href="<?php echo get_option("siteurl"); ?>"><?php echo file_get_contents(get_template_directory() . "/img/logoText.svg"); ?></a></div>
-                </div>
-                <h2 class="menuHeading">Menu</h2>
-    <?php echoMenu(false); ?>
-                <div class="stramienHeader bronze"><?php single_post_title(); ?></div>
-                <div class="stramienInfo">Memorabele verhalen om te lezen</div>
-            </div>
-        </div>
-    </div>
+    
     <div class="container row"> 
         <div class="tag-container">
         

@@ -2,7 +2,6 @@
 
 function echoMenu(bool $blackText = true)  {
     $listItemClasses = "navItem" . ($blackText ? " black" : " white");
-
     echo '<aside class="sideBar">
         <nav class="sideNav">
             <ul class="navList">
@@ -13,6 +12,7 @@ function echoMenu(bool $blackText = true)  {
                 <li class="' . $listItemClasses . '"><a href="'.home_url().'/cases">Cases</a></li>
                 <li class="' . $listItemClasses . '"><a href="'.home_url().'/blog">Blog</a></li>
                 <li class="navItem bronze"><a href="'.home_url().'/contact">Contact</a></li>
+                <li class=" bronze backButton"><i onclick="window.history.go(-1); return false;" class="fas fa-chevron-left"></i></li>
             </ul>
         </nav>
     </aside>';
@@ -33,3 +33,4 @@ function echoMenu(bool $blackText = true)  {
     }
 }
 
+?>
