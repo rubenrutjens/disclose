@@ -54,3 +54,31 @@
     padding: 1em 1.2em;
   
   }
+
+.search {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    font-family: Taviraj;
+    font-size: 1rem;
+    z-index: 701;
+}
+
+.search-form input, input:focus, input:active {
+    background: transparent;
+    border: none;
+    color: white;
+}
+.search-form button {
+    background: transparent;
+    border: none;
+    color: white;
+    
+}
+.search-form input::placeholder {
+  color: white;
+  font-family: Taviraj;
+  font-weight: lighter;
+  opacity: 1;
+  font-size: 11px;
+}

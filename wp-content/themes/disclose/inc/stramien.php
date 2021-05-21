@@ -22,7 +22,6 @@ $(document).ready(function(){
         <div class="logoPart logoIcon"><a href="<?php echo get_option("siteurl"); ?>"><?php echo file_get_contents(get_template_directory() . "/img/logoIcon.svg"); ?></a></div>
         <div class="logoPart logoText black"><a href="<?php echo get_option("siteurl"); ?>"><?php echo file_get_contents(get_template_directory() . "/img/logoText.svg"); ?></a></div>
     </div>
-    <h2 class="menuHeading">Menu</h2>
     <?php echoMenu(true); ?>
     <div class="stramienBackground overlay">
         <div class="innerTextRelativeContainer">
@@ -33,6 +32,9 @@ $(document).ready(function(){
                 </div>
                     <h2 class="menuHeading">Menu</h2>
                     <?php echoMenu(false); ?> 
+                    <div class="search">
+                        <?php get_search_form() ?>
+                    </div>
                     <?php if(is_page(127)) { //contact page ?>
                         <div class="row contactContainer">
                             <div class="contactHeader bronze"><?php the_title(); ?></div>

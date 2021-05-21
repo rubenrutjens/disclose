@@ -1,6 +1,7 @@
 <?php
    get_header(); 
    include get_template_directory() . '/sidebar.php';
+   include get_template_directory() . '/php/visitor_tracking.php';
    
    ?>
 
