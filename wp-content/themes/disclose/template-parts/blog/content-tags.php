@@ -1,4 +1,5 @@
 
+    <div class="container"> 
 
 <section class="blogs col-md-6">
     <div class="card">
@@ -18,3 +19,4 @@
         </div>
     </div>
 </section>
+</div>
