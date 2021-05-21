@@ -1,0 +1,66 @@
+/*
+Theme Name: Disclose Agency Website Template
+Theme URI: 
+Description: Website template made for the disclose agency company.
+Version: 1.0
+Author: Ruben Rutjens
+Author URI: 
+ */
+ html, body {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+
+
+
+@font-face {
+	font-family: Taviraj;
+	src: url("./fonts/Taviraj-Regular.ttf");
+}
+
+@font-face {
+	font-family: Taviraj-light;
+	src: url("./fonts/Taviraj-Light.ttf");
+}
+
+@font-face {
+	font-family: Taviraj-semibold;
+	src: url("./fonts/Taviraj-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: Magnite;
+	src: url("./fonts/Magnite.otf");
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url("./fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+	font-family: Trirong;
+	src: url("./fonts/Trirong-Bold.ttf");
+}
+
+@font-face {
+	font-family: RobotoSlab;
+	src: url("./fonts/RobotoSlab.ttf");
+}
+
+#taviraj-r {
+	font-family: 'Taviraj';
+}
+
+#taviraj-l {
+	font-family: 'Taviraj-light';
+}
+
+#taviraj-sb {
+	font-family: 'Taviraj-semibold';
+}
+
+#magnite {
+	font-family: 'Magnite';
+}

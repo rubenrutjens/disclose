@@ -1,0 +1,48 @@
+
+.stramienBackground  {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./img/stramien-jumbotron.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover
+}
+
+.innerTextRelativeContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.innerTextAbsoluteContainer {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    clip: rect(0, auto, auto, 0);
+}
+
+.stramienHeader {
+    position: fixed;
+    top: 40%;
+    left: 20%;
+    font-family: Taviraj;
+    font-size: 4rem;
+    line-height: 75px;
+    z-index: 701;
+}
+.stramienInfo {
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    font-family: Taviraj;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 75px;
+    z-index: 701;
+}
+.stramien-container {
+    margin-left:20%;
+    margin-top: 10%;
+    padding-bottom: 20%;
+    right: 100px;
+}

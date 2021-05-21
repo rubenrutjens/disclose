@@ -1,0 +1,181 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #ee3577;
+    --red: #dc3545;
+    --orange: #f68e62;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #767575;
+    --gray-dark: #434242;
+    --primary: #6f42c1;
+    --secondary: #4f4f4f;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #c2c2c2;
+    --lightgray: #eeeeee;
+    --dark: #434242;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /* Font Sizes */
+    --font-normal: 1em;
+    --font-small: 0.8125rem;
+    /* Sidebar */
+    --sidebar-width: 280px;
+    --content-max-width: 860px;
+}
+.blog-info {
+    margin-right: 10%;
+    max-width: 80vw;
+    height: 100%;
+    max-height: 200px;
+
+}
+.tag-container {
+    width: 100%;
+}
+.tag-text {
+    color: black;
+}
+.blog-info .tags .tag {
+    margin-top: 5%;
+    display: block;
+    border: 2px solid #B9A488;    
+    text-align: center;
+    margin-right: 40%;
+}
+.tag a {
+    color:black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+.blog-info .tags .tag {
+    margin-top: 5%;
+    display: block;
+    border: 2px solid #B9A488;    
+    text-align: center;
+    margin-right: 40%;
+}
+.tag a {
+    color:black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.blog-content {
+    /* padding-top: 10%; */
+    margin-right: 15%;
+}
+
+.blog-content .thumbnail {
+    max-width: 160px;
+    border-radius: 2px
+}
+
+
+.overlay {
+  position: relative;
+}
+
+.overlay:after {
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:.5;
+  background-color: #100e0e;
+}
+
+
+
+.container {
+    /* height: 100%; */
+    margin-left: 20%!important;
+    margin-right: 15%;
+}
+
+.meta span a {
+    color: #8f8f8f;
+    z-index: 800;
+}
+.meta span.tag {
+    background-color: var(--lightgray);
+    padding:0 .5em;
+    border-radius:5px;
+}
+.meta span a:hover {
+    color: var(--secondary)
+}
+
+
+
+
+.post .title {
+    font-size: 1.275rem
+}
+
+.post .title a {
+    color: var(--gray-dark)
+}
+
+.post .title a:hover {
+    color: var(--gray-dark)
+}
+
+.post .post-thumb {
+    max-width: 160px;
+    border-radius: 2px
+}
+
+.post .intro {
+    font-size: 0.875rem
+}
+
+.post .more-link {
+    font-size: var(--font-small);
+}
+
+.meta {
+    color: #8f8f8f;
+    font-size: var(--font-small);
+}
+
+.meta span {
+    display: inline-block;
+    margin-right:.25em;
+}
+
+
+.meta span:last-child:after {
+    display: none
+}
+
+
+.newPost {
+    color:red;
+    width: 150px;
+    height: 30px;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    transform: rotate(20deg);
+    font-size: 3rem;
+}

@@ -1,0 +1,249 @@
+.black  {
+    color: black !important;
+}
+.white {
+	color: white !important;
+}
+
+.navItem.white  {
+    color: white !important;
+}
+
+.navItem.black  {
+    z-index: 999 !important;
+}
+
+
+
+.navItem.bronze {
+    color: #B9A488 !important;
+}
+
+.bronze {
+    color: #B9A488;
+}
+
+
+.stopScroll {
+    position: absolute !important;
+}
+
+.backdrop   {
+    opacity: 0.64;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 700;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events:none;
+}
+
+.backdrop.fadein  {
+    animation: fadeInBackdrop forwards 0.3s;
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 702;
+}
+
+.backdrop.fadeout   {
+    animation: fadeOutBackdrop forwards 0.3s;
+    pointer-events:none;
+}
+
+.sideBarBackground  {
+    position: fixed;
+    z-index: 800;
+    height: 100vh;
+    width: 542px;
+    transform: translateX(-542px);
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.sideBarBackgroundLeft  {
+    transition: 0.3s ease-in-out;
+    position: relative;
+    z-index: 800;
+    width: 262px;
+    height: 100%;
+    display: inline-block;
+}
+
+.sideBarBackgroundRight {
+    transition: 0.3s ease-in-out;
+    position: relative;
+    z-index: 799;
+    width: 275px;
+    height: 100%;
+    display: inline-block;
+    transform: translateX(-275px);
+}
+
+.sideBarBackground.slideIn,
+.sideBarBackgroundLeft.slideIn  {
+    transform: translateX(0px);
+}
+
+.sideBarBackgroundRight.slideIn  {
+    transform: translateX(-5px);
+}
+
+.sideBarBackground .backgroundShade  {
+    background-color: black;
+    opacity: 0.83;
+    width: 100%;
+    height: 100%;
+}
+
+.logo   {
+    position: fixed;
+    left: 85px;
+    top: 88px;
+    z-index: 1000;
+    transition: 0.7s ease-in-out;
+}
+
+.logo.shrink    {
+    left: 0px;
+    transform: scale(0.5);
+}
+
+
+.logoPart   {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logoIcon   {
+    height: 55px;
+    padding-right: 18px;
+}
+
+.menuHeading {
+    color: #B9A488;
+    font-family: Magnite;
+    font-size: 3rem;
+    font-weight: 100;
+    left: 85px;
+    position: fixed;
+    z-index: 1000;
+    top: 200px;
+}
+.menuHeading.hide {
+    transition: 0.4s ease-in-out;
+    transform: scale(0);
+}
+
+.sideBar    {
+    position: fixed;
+    z-index: 1000;
+    top: 300px;
+    transition: 0.8s ease-in-out;
+    left: 85px;
+}
+
+.sideBar.new{
+    position: fixed;
+    z-index: 1000;
+    top: 200px;
+    transition: 0.8s ease-in-out;
+    left: 85px;
+}
+
+.navList    {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+    font-family: Poppins;
+    position: relative;
+    margin-bottom: 29px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+.navItem a { color: inherit; } 
+.navItem a:hover  {text-decoration: none;
+    color: #B9A488 !important;
+}
+.navItem:hover  {
+    color: #B9A488 !important;
+}
+
+.hide {
+    transition: 0.1s ease-out;
+    opacity: 0;
+}
+
+
+
+.navItem::after {
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    bottom: 40px;
+    left: 0px;
+    width: 51px;
+    height: 1px;
+    background-color: #b9A488;
+}
+
+.navItem:first-child::after  {
+    content: "";
+    display: none;
+}
+
+.logoPart.logoText.black path   {
+    fill: black;
+}
+
+.logoPart.logoText.black.white path {
+    fill: white;
+}
+
+.subSideNav {
+    position: absolute;
+    left: 5px;
+    top: 220px;
+}
+@font-face  {
+    font-family: Taviraj;
+    src: url("./fonts/Taviraj-Regular.ttf");
+}
+
+@font-face  {
+    font-family: Magnite;
+    src: url("./fonts/Magnite.otf");
+}
+
+@font-face  {
+    font-family: Poppins;
+    src: url("./fonts/Poppins-Medium.ttf");
+}
+
+@font-face  {
+    font-family: Trirong;
+    src: url("./fonts/Trirong-Bold.ttf");
+}
+
+@font-face  {
+    font-family: RobotoSlab;
+    src: url("./fonts/RobotoSlab.ttf");
+}
+@keyframes fadeInBackdrop   {
+    from    { opacity: 0; }
+    to      { opacity: 0.64; }
+}
+
+@keyframes fadeOutBackdrop  {
+    from    { opacity: 0.64; }
+    to      { opacity: 0; }
+}

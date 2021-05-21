@@ -1,0 +1,135 @@
+.contactContainer {
+    position: fixed;
+    top: 45%;
+    left: 20%;
+    font-family: Taviraj;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 15px;
+    z-index: 701;
+    width: 60vw;
+    overflow: hidden;
+}
+
+.contactHeader {
+    position: fixed;
+    top: 30%;
+    left: 20%;
+    font-family: Taviraj;
+    font-size: 3rem;
+    line-height: 75px;
+    z-index: 701;
+}
+
+
+#icon {
+
+    margin-top: 10%;
+}
+
+#icon:last-child {
+    top: 150%;
+}
+.information {
+    
+    width:90%;
+    padding-left:10%;
+    display:inline-flex;
+    margin-bottom:0px;
+}
+.gegevens {
+    
+    font-weight: bold;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+}
+
+.contact input[type="text"], textarea
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(228, 226, 226);
+    opacity: 0.9;
+}
+
+.contact input, textarea {
+    width: 100%;
+    margin-bottom: 5%;
+    color: white;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.contact input::placeholder, textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-weight: lighter;
+    opacity: .9; /* Firefox */
+}
+
+.contact input:-ms-input-placeholder, textarea::placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.contact input::-ms-input-placeholder, textarea::placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+.contact {
+    position: relative;
+}
+.placeholder {
+    bottom: 10px;
+    color: #ccc;
+    font-family: arial;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    z-index: 1;
+    -webkit-transition: all ease-out 0.5s;
+    transition: all ease-out 0.5s;
+}
+
+
+
+.feedback-input {
+    resize: none;
+    height: 100px;
+}
+.overlay {
+    position: relative;
+}
+
+.overlay:after {
+    position: absolute;
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:.8!important;
+    background-color: #100e0e;
+}
+
+.contactForm-Button {
+	background-color:transparent;
+	border:2px solid #B9A488;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:lighter;
+	padding:12px 29px;
+	text-decoration:none;
+    position:absolute;
+    bottom:0px;
+    right:0px; 
+}
+.contactForm-Button:hover {
+	background-color:transparent;
+}
+.contactForm-Button:active {
+	position:relative;
+	top:1px;
+}

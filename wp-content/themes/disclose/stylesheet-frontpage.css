@@ -1,0 +1,453 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+.stopTransition *   {
+    transition: none !important;
+}
+
+.stopScroll {
+	position: absolute !important;
+}
+main {
+	position: absolute;
+	z-index: 701;
+	width: 100%;
+}
+
+.globeBackground  {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./img/globe.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.innerTextRelativeContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.innerTextAbsoluteContainer {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    clip: rect(0, auto, auto, 0);
+}
+
+.innerText {
+    position: fixed;
+    top: 385px;
+    left: 35%;
+    font-family: Taviraj;
+    color: white;
+    font-size: 4rem;
+    line-height: 75px;
+    z-index: 701;
+}
+
+/*                       */
+/* First content on page */
+/*                       */
+
+.doelContainer  {
+    display: grid;
+    grid-template-areas: "text image";
+    margin-bottom: 120px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.doelContainer.reverse  {
+    grid-template-areas: "image text";
+    margin-bottom: 0px;
+}
+
+
+.doelTextContainer  {
+    grid-area: text;
+    display: flex;
+    width: 75vw;
+    flex-direction:row;
+}
+
+.doelImageContainer {
+    grid-area: image;
+    width:35vw;
+}
+.flex-child {
+    flex: 1;
+}
+.text {
+    flex: 0 0 45%;
+    padding-right:5%;
+    padding-bottom:10px;
+}
+
+.text.reverse {
+    padding-left:5%;
+    padding-right: 0%;
+}
+.text h2 {
+    font-family: Taviraj;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.text p {
+    font-family: Taviraj;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.text a    {
+    font-family: Trirong;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border: 2px solid #B9A488;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    width: 122px;
+    text-align: center;
+}
+.image:first-child {
+    flex: 0 0 45%;
+}
+.image img{
+    width: 100%;
+    height: 400px;
+    max-width: 650px;
+}
+
+.image.reverse {
+    padding-left:0px;
+}
+
+/*                 */
+/* Quote Container */
+/*                 */
+
+.quoteContainer {
+    margin: 400px 0px;
+    position: relative;
+    z-index: 701;
+}
+
+.quoteContainer::after  {
+    content: "";
+    font-family: Magnite;
+    font-size: 3rem;
+    position: absolute;
+    top: 60px;
+    left: 25%;
+}
+
+.quoteContainer.jeffBezos::after    {
+    font-size: 5rem;
+    content: "~Jeff Bezos (Amazon)"
+}
+
+.quoteContainer .quote  {
+    font-family: Taviraj;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+
+.cloud{ 
+    margin-top:0px;
+    width:350px;
+    height:120px;
+    background:#EEEFF1;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+    opacity: 0.4;
+    transform: scale(3);
+    margin-left: 25%;
+ }
+ .cloud::after, .cloud::before{
+     content:"";
+     position:relative;
+     display:inline-block;
+     background:inherit;
+     border-radius:inherit;
+ }
+ .cloud::after{
+     width:100px;
+     height:100px;
+     top:-120px;
+     left:0px;
+ }
+ .cloud::before{
+     width:180px;
+     height:180px;
+     top: -70px;
+     left:30px;
+ }
+
+
+ /*                     */
+ /* Expertise Container */
+ /*                     */
+ 
+
+.main {
+    padding-left:20%;
+    padding-top: 30%;
+    padding-right: 5%;
+}
+
+.expertiseContainer {
+    padding-bottom: 30%;
+}
+
+.expertiseHeading   {
+    font-family: Taviraj;
+    font-size: 2rem;
+    font-family: 600;
+}
+
+.expertisesText {
+    font-family: Taviraj;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.expertiseDisplay   {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.expertise  {
+    width: 275px;
+    position: relative;
+    z-index: 701;
+}
+
+.expertise img  {
+    width: 100%;
+    height: 344px;
+    object-fit: cover;
+}
+
+.expertise .expertiseText  {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 260px;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 400px;
+}
+
+.expertiseText h2   {
+    font-family: Taviraj;
+    font-weight: 600;
+}
+
+.expertiseText p    {
+    font-family: Taviraj;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.expertiseText a    {
+    font-family: Trirong;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    border: 1px solid #B9A488;
+    font-size: 1rem;
+    padding: 10px 20px;
+    width: 122px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+/*                  */
+/* Banner Container */
+/*                  */
+
+.banner-blok {
+    height: 100%;
+}
+
+
+.banner {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/banner.png);
+}
+
+.banner-title {
+	font-size: 60px;
+	color: white;
+	margin-left: 20%;
+	padding-top: 5%;
+}
+
+.banner-sword {
+	/* float: right;
+    margin-right: 70%; */
+	position: relative;
+	padding-left: 50px;
+	top: 15px;
+}
+
+.twoVerticleBronzeLines-small {
+	position: absolute;
+	width: 2px;
+	height: 130px;
+	left: 562px;
+	background-color: #B9A488;
+}
+
+.twoVerticleBronzeLines-small::before {
+	content: "";
+	width: 2px;
+	height: 130px;
+	position: absolute;
+	right: 15px;
+	background-color: #B9A488;
+}
+
+.branding {
+	margin-bottom: 500px;
+}
+
+.marketing {
+	margin-bottom: 500px;
+}
+
+.merkactivatie {
+	margin-bottom: 200px;
+}
+
+#banner-story {
+	margin-left: 25%;
+	margin-top: 200px;
+	margin-right: 10%;
+	padding-bottom: 1%;
+}
+
+.banner-letter, .banner-letter2, .banner-letter3 {
+	font-size: 300px;
+	position: absolute;
+	color: #3D3A37;
+	left: -100px;
+	top: -160px;
+	opacity: 0.8;
+}
+
+.banner-topic,
+.banner-text {
+	color: white    ;
+	position: relative;
+}
+
+.banner-topic {
+	font-size: 20px;
+}
+
+.banner-text {
+	font-size: 14px;
+    line-height: 32px;
+}
+
+
+
+/*  */
+/* Frontpage Blog archive section */
+/*  */
+.frontpage-blogs {
+    padding-left:20%;
+    padding-top: 10%;
+    padding-right: 5%;
+}
+
+.frontpage-title {
+    font-size: 7em;
+}
+.card {
+    border: none!important;
+    height: 30vw!important;
+}
+.card-horizontal {
+    display: flex;
+    flex: 0 1 ;
+    position: relative;
+}
+.img-square-wrapper img {
+    height: 22vw;
+    object-fit: cover;
+}
+.card-body {
+    border: 5px solid #B9A488;
+    position: relative;
+}
+.card-date {
+    color: #B9A488;
+    font-size: 11px;
+}
+
+.card-body a, .card-body a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.card-body a {
+    position: absolute;
+    font-size: 11px;
+    bottom: 5%;
+    right:5%;
+}
+.blogs {
+    margin-top: 200px;
+}
+
+.card-title {
+    font-size: 22px;
+    text-align-last: left;
+    padding-top: 10%;
+}
+.img-square-wrapper {
+    width: 40%;
+}
+.card-body {
+    width:60%;
+}
+
+.card-text {
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: light;
+}
+.card-bottom a, .card-bottom a:hover {
+    color: black;
+    text-decoration: none;
+}
+.more-link {
+    border: 1px solid #3D3A37;
+    padding: 10px 15px 10px 15px;
+}
