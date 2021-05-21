@@ -21,7 +21,7 @@
                <div class="logoPart logoIcon"><a href="<?php echo get_option("siteurl"); ?>"><?php echo file_get_contents(get_template_directory() . "/img/logoIcon.svg"); ?></a></div>
                <div class="logoPart logoText"><a href="<?php echo get_option("siteurl"); ?>"><?php echo file_get_contents(get_template_directory() . "/img/logoText.svg"); ?></a></div>
             </div>
-            <h2 class="menuHeading">Menu</h2>
+            <h2 class="menuHeading">Menu</h2>  
             <div class="innerText">Je <span class="bronze">visuele identiteit</span> is<br/>het <span class="bronze">verlengstuk</span> van<br/>je <span class="bronze">ambitie</span>.</div>
             <?php echoMenu(false); ?>
          </div>
