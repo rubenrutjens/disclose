@@ -4,7 +4,8 @@
 wp-content/*
 
 !wp-content/plugins
-wp-content/plguins/*
+!wp-content/Belangrijke Gegevens.txt
+wp-content/plugins/*
 !wp-content/plugins/custom-plugin
 
 !wp-content/themes
