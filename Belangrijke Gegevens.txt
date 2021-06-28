@@ -1,1 +1,11 @@
 
+Wordpress :
+
+  Username: admin@admin.nl
+  Password: admin123
+  
+Database:
+  Link: `localhost`
+  Username: `root`
+  Password: (empty)
+  Database name: `Wordpress`
